@@ -1,0 +1,168 @@
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+.col1{
+width:50px;
+}
+</style>
+</head>
+<body>
+<div class="container-fluid">
+<h2>Basic Table</h2>
+<p>The .table class adds basic styling (light padding and only horizontal dividers) to a table:</p>     
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+<div class="card">
+<div class="card-body">
+<table class="table table-bordered" style="width: 100%; max-width: 1400px; table-layout: fixed;">
+<tbody>
+<tr>
+<td class="col1"></td>
+<td colspan="2">Name & Contact of the Insured</td>
+<td colspan="2"></td>
+
+</tr>
+<tr>
+<td class="col1"></td>
+<td colspan="2">Claim No.</td>
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="col1"></td>
+<td>Policy No.</td>
+<td>Policy Period</td>
+<td></td>
+<td>to</td>
+</tr>
+<tr>
+<td class="col1"></td>
+<td colspan="2">Date of Accident</td>
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="col1"></td>
+<td colspan="2">Vehicle Registration No.</td>
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="col1"></td>
+<td>Chassis No. </td>
+<td>Engine No.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="col1"></td>
+<td colspan="2">(as per physical verfication )</td>
+<td ></td>
+<td ></td>
+</tr>
+<tr>
+<td class="col1"></td>
+<td colspan="2">Date of appointment & Date & Time of first 
+visit for inspection</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="col1"></td>
+<td colspan="2">Place of inspection ( if different from the 
+repairer`s workshop )</td>
+<td colspan="2"></td>
+</tr>
+
+<tr>
+<td class="col1"></td>
+<td colspan="2">Brief descriptoin of accident</td>
+<td rowspan="2" colspan="2"></td>
+</tr>
+<tr>
+<td class="col1"></td>
+<td colspan="2">Whether the nature of damage corroborates 
+with the cause of loss</td>
+</tr>
+<tr>
+<td class="col1"></td>
+<td colspan="2">Whether accompanied by NIC Officer. if yes 
+Name, & Designation of the Office</td>
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="col1"></td>
+<td colspan="2">Loss Estimate</td>
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="col1"></td>
+<td colspan="2">Major damage physically noticed</td>
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="col1"></td>
+<td colspan="2">Suspected Internal damage</td>
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="col1"></td>
+<td colspan="2">Whether Spot Survey report/ photographs 
+received, if yes, any further damage 
+observed subsequently after shifting the 
+vehicle from the spot</td>
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="col1"></td>
+<td colspan="2">Any pre-existing/old damage</td>
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="col1"></td>
+<td colspan="2">Perferred Mode of Assessment (Repair/CTL)</td>
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="col1"></td>
+<td colspan="2">Insurer`s approx. liability</td>
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="col1"></td>
+<td colspan="2">Other Information relevent for assessement 
+of loss & discrepaincies observed in 
+vehicluar document (if any )</td>
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="col1"></td>
+<td colspan="2">Surveyor APP Token Number/s</td>
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="col1"></td>
+<td colspan="2">Name of the NIC officer with whom ILA 
+discussed</td>
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="5">
+1. ATTACH A FEW PHOTOGRAPHS CLEARLY SHOWING THE DAMAGES<br>
+2. In case CTL, submit preliminary report within 7 days with at-least 2/3 online/offline wreck quotation.
+</td>
+</tr>
+</tbody>
+</table> 
+</div>
+</div>
+</div>
+</div>    
+
+</div>
+</div>
+</body>
+</html>

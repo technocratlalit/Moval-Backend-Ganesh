@@ -1,0 +1,25 @@
+name: "Publish Code to Cpanel"
+
+on:
+  push:
+    branches:
+      - master
+    
+jobs:
+    
+  FTP-Deploy-Action:
+    name: FTP-Deploy-Action
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Repository Checkout"
+        uses: actions/checkout@v3
+
+      - name: "RSYNC-Deploy-Action"
+        uses: contention/rsync-deployments@v2.0.0
+        with:
+          FLAGS: -avzh --progress
+          USER: ${{ secrets.SSH_USERNAME }}
+          HOST: ${{ secrets.SSH_IP }}
+          LOCALPATH: /dist/
+          REMOTEPATH: /home/techkrate/public_html/dev.moval.techkrate.com/backend
+          DEPLOY_KEY: ${{ secrets.SSH_PASSWORD }}

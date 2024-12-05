@@ -1,0 +1,44 @@
+on:
+  push:
+    branches:
+      - main
+
+name: Moval On Push
+
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v2
+
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@4.3.3
+        with:
+          server: '192.64.83.204'
+          username: 'techkrate'
+          password: 'JSDEcBA5*S1S'
+          server-dir: '/home/techkrate/public_html/dev.moval.techkrate.com/backend/'
+
+      - name: Send Slack notification on success
+        if: success()
+        env:
+          SLACK_WEBHOOK_URL: 'https://hooks.slack.com/services/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'
+        run: |
+          curl -X POST -H 'Content-type: application/json' --data '{
+            "text": "Code Deployed Successfully",
+            "username": "GitHub Actions",
+            "attachments": [
+              {
+                "color": "good",
+                "title": "Repo",
+                "text": "${{ github.repository }}"
+              },
+              {
+                "color": "good",
+                "title": "Branch",
+                "text": "${{ github.ref }}"
+              }
+            ]
+          }' $SLACK_WEBHOOK_URL

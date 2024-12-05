@@ -1,0 +1,38 @@
+<?php
+
+	return [
+	    "sop"=>"ms_sop_master",
+	    "sop_field"=>"ms_sop_details",
+	    "branch"=>"ms_branch",
+	    "branch_sop"=>"ms_sop_branch",
+	    "msadmin"=>"tbl_ms_admin",
+		"super_admin_table" => "tbl_super_admin",
+        "admin_table" => "tbl_admin",
+		"employee_table" => "tbl_employee",
+		"employee_table_ms" => "tbl_ms_employee",
+		"job_table" => "tbl_job",
+		"job_detail_table" => "tbl_job_detail",
+		"job_files_table" => "tbl_job_files",
+		"job_files_table_temp" => "tbl_job_files_temp",
+		"client_table" => "tbl_clients",
+        "client_branch_table" => "tbl_client_branches",
+        "job_transaction_history" => "tbl_job_transaction_history",
+        "admin_invoice_table" => "tbl_admin_invoice",
+        "branch_contact_person_table" => "tbl_branch_contact_person",
+        "important_updates_table" => "tbl_important_updates",
+		"limit_per_page" => "10",
+        "firebase_push_key" => "AAAAT4gKn4I:APA91bENu1WrHtp62x88bi2h6ipEazm7HYXQIS5WHu2cqNVeuN8txGtwWkyYwpSIN_iWZTvVtiFVD8IFRDgZj_dhXSm7Ot9oI8nlh8g244kso5swIkMPTVIOKhx7WDSe0DmBgDzVlzcK",
+        "new_job_notification_title" => "New Job",
+        "new_job_notification_message" => "New job assinged to you",
+        "job_submitted_notification_title" => "Job submitted",
+        "job_submitted_notification_message" => "Job submitted successfully",
+        "job_notification_channel_id" => "job_notification_channel",
+        "job_distance_filter" => "100",
+        "super_admin_email" => "technocratlalit@gmail.com",
+        "razor_payment_link_api_url" => "https://api.razorpay.com/v1/payment_links",
+        "razor_payment_thankyou_page" => "/razorpay/ipn.php?target=",
+        "razor_pay_job_payment_call_back" => "/moval-admin/api/job/razor-job-payment-link-webhook",
+        "razor_pay_admin_payment_call_back" => "/moval-admin/api/admin/razor-admin-payment-link-webhook",
+	];
+
+?>
